@@ -1,8 +1,7 @@
 /*=========================== наслідування =========================*/
 body {
     font-family: 'Roboto',
-        sans-serif;
-}
+        sans-serif;}
 
 :root {
     --accent-color:  #2196F3;
@@ -113,7 +112,6 @@ text-transform: uppercase;
 color: #212121;}
 
 .description-advantage {
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -156,7 +154,6 @@ letter-spacing: 0.03em;
 color: #212121;}
 
 .position {
-font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
 text-align: center;
@@ -177,7 +174,6 @@ color: var(--the-second-color)}
 
 .link_geolocation {
 font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
@@ -185,19 +181,23 @@ color: var(--the-second-color)}
 
 .link_contact {
 font-style: normal;
-font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);}
+
+.link_geolocation:hover,
+.link_geolocation:focus {color: var(--accent-color)}
+
+.link_contact:hover,
+.link_contact:focus {color: var(--accent-color)}
 /* ============== footer ==============*/
 
 /*///////////////////////////////// TWO PAGE //////////////////////*/
 
 /* ============== filters ==============*/
 .filter {
-font-family: 'Roboto';
-font-style: normal;
+font-family: 'Roboto', sans-serif;
 font-weight: 500;
 font-size: 16px;
 line-height: 26px;
@@ -205,7 +205,8 @@ text-align: center;
 letter-spacing: 0.03em;
 color: #212121;background: #F5F4FA;
 border-radius: 4px;
-border-style: none;}
+border-style: none;
+cursor: pointer;}
 
 
 .filter:hover,
