@@ -196,11 +196,11 @@ color: rgba(255, 255, 255, 0.6);}
 /*///////////////////////////////// TWO PAGE //////////////////////*/
 
 /* ============== filters ==============*/
-.filter {
-font-family: 'Roboto', sans-serif;
+.filter {font-family: 'Roboto',
+sans-serif;
 font-weight: 500;
 font-size: 16px;
-line-height: 26px;
+line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;background: #F5F4FA;
@@ -237,4 +237,4 @@ line-height: 1.87;
 letter-spacing: 0.03em;
 color: #757575;}
 /* ============== elements ==============*/
-
+.xxx {color: tomato; background-color: aqua;}
