@@ -6,6 +6,7 @@ body {
 :root {
     --accent-color:  #2196F3;
     --the-second-color: #FFFFFF;
+    --mine-color: #212122;
 }
 /*=========================== наслідування =========================*/
 
@@ -15,29 +16,59 @@ body {
 .link {text-decoration: none;}
 /*============== Скидання браузерних стилів ==============*/
 
-/*============== логотип ==============*/
-.accent {font-family: 'Raleway', sans-serif;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: var(--accent-color)}
+/*================ Розміщення елементів. Flexbox. =================*/
 
-.logo-two-part {font-family: 'Raleway', sans-serif;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: rgb(0, 0, 0)}
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*============== логотип ==============*/
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: rgb(0, 0, 0)
+}
+
+.accent {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color)
+}
 /*============== логотип ==============*/
 
 /*============== навігація ==============*/
-.menu-link {
+.menu .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+}
+
+/*альтернативний варіант з додатковим класом в посиланнях "menu-link" */
+
+/*.menu-link {
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-color: #212121;}
+color: var(--main-color);}*/
+
+.menu .link:hover,
+.menu .link:focus {
+    color: var(--accent-color)
+}
+
 /*============== авігація ==============*/
 
 /*============== contacts in header ==============*/
@@ -55,9 +86,6 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;}
 
-
-.menu-link:hover,
-.menu-link:focus {color: var(--accent-color)}
 
 .contact-mail:hover,
 .contact-mail:focus {color: var(--accent-color)}
@@ -77,8 +105,7 @@ color: #757575;}
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--the-second-color);
-    background-color: #2F303A;}
+    color: var(--the-second-color);}
 /*============== Основний заголовок на сторінці ==============*/
 
 /* ============== modal button ==============*/
@@ -109,7 +136,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #212121;}
+color: var(--main-color);}
 
 .description-advantage {
 font-size: 14px;
@@ -125,7 +152,7 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;}
+color: var(--mine-color);}
 /* ============== Чем мы занимаемся ==============*/
 
 /* ============== Наша команда ==============*/
@@ -137,7 +164,7 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;}
+color: var(--main-color);}
 
 .list-team {background: var(--the-second-color);        
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -151,7 +178,7 @@ font-size: 16px;
 line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
-color: #212121;}
+color: var(--mine-color);}
 
 .position {
 font-size: 16px;
@@ -164,6 +191,7 @@ color: #757575;}
 /* ============== footer ==============*/
 .footer {background-color: #2F303A;}
 /*============== logo in footer==============*/
+
 .logo-footer {font-family: 'Raleway', sans-serif;
 font-weight: 700;
 font-size: 26px;
